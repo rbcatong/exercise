@@ -2,7 +2,7 @@ export const editRoutine = (routine) => {
   
     return(dispatch) => {
       //gives us access to the dispatch function due to thunk
-      fetch(`http://localhost:3000/routines/${routine.id}`, {
+      fetch(`https://exercise-with-me.herokuapp.com/${routine.id}`, {
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'

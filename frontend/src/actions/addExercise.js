@@ -1,7 +1,7 @@
 export const addExercise = (exercise, routineId) => {
   return(dispatch) => {
     console.log("C");
-    return fetch(`http://localhost:3000/routines/${routineId}/exercises`, {
+    return fetch(`https://exercise-with-me.herokuapp.com/routines/${routineId}/exercises`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

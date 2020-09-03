@@ -1,6 +1,6 @@
 export function fetchRoutines(){
   return (dispatch) => {
-    fetch('http://localhost:3000/routines')
+    fetch('https://exercise-with-me.herokuapp.com/routines')
     .then(resp => resp.json())
     .then(routines => dispatch({
       type: 'FETCH_ROUTINES',

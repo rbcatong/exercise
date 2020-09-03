@@ -1,7 +1,7 @@
 export const deleteExercise = (routineId,exerciseId) => {
 
   return (dispatch) => {
-    return fetch(`http://localhost:3000/routines/${routineId}/exercises/${exerciseId}`, {
+    return fetch(`https://exercise-with-me.herokuapp.com/${routineId}/exercises/${exerciseId}`, {
       method: 'DELETE'
     })
     .then(response => response.json())
